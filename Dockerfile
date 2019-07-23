@@ -290,6 +290,7 @@ RUN cd / && git clone https://github.com/meetecho/janus-gateway.git && cd /janus
     --enable-all-handlers && \
     make && make install && make configs && ldconfig
 
+# my modif
 COPY nginx.conf /usr/local/nginx/nginx.conf
 # COPY janus.plugin.videoroom.jcfg /usr/local/etc/janus/
 COPY janus-config/ /usr/local/etc/janus
