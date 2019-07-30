@@ -38,15 +38,16 @@
 #}
 
 general: {
-	#admin_key = "supersecret"		# If set, rooms can be created via API only
+	admin_key = "supersecret"		# If set, rooms can be created via API only
 									# if this key is provided in the request
-	#events = false					# Whether events should be sent to event
+	events = true					# Whether events should be sent to event
 									# handlers (default=true)
 }
 
 room-1234: {
 	description = "Demo Room"
-	secret = "adminpwd"
+	# pin = "1234"
+	# secret = "adminpwd"
 	publishers = 6
 	bitrate = 128000
 	fir_freq = 1
@@ -55,6 +56,7 @@ room-1234: {
 	#transport_wide_cc_ext = true
 	record = false
 	#rec_dir = "/path/to/recordings-folder"
+	is_private = true
 }
 
 # This other demo room here is only there in case you want to play with
