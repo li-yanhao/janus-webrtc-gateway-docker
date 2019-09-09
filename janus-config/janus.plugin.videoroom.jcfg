@@ -56,7 +56,7 @@ room-1234: {
 	#transport_wide_cc_ext = true
 	record = false
 	#rec_dir = "/path/to/recordings-folder"
-	is_private = true
+	is_private = false
 }
 
 # This other demo room here is only there in case you want to play with
